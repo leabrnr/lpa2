@@ -10,10 +10,6 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 
-# Use sqlite3 as the database for dev
-group :development do
-  gem 'sqlite3', '~> 1.3.6'
-end
 
 # Postgresql for deploy
 group :production do
@@ -53,6 +49,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'rubyzip', '~> 1.3.0'
   gem 'selenium-webdriver'
+  gem 'sqlite3', '~> 1.3.6'
 end
 
 group :development do
