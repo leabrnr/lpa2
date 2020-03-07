@@ -25,5 +25,27 @@
   <%= @burger.code %>
 </p>
 
+<p>
+  <strong>Nutriments:</strong>
+<table>
+  <thead>
+  <tr>
+    <th>Fat</th>
+    <th>Sugars</th>
+    <th>Salt</th>
+    <th>Protein</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><%= @burger.nutriments[0]["fat"] %></td>
+    <td><%= @burger.nutriments[0]["sugars"] %></td>
+    <td><%= @burger.nutriments[0]["salt"] %></td>
+    <td><%= @burger.nutriments[0]["proteins"] %></td>
+  </tr>
+  </tbody>
+</table>
+</p>
+
 <%= link_to 'Edit', edit_burger_path(@burger) %> |
 <%= link_to 'Back', burgers_path %>
